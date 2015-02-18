@@ -27,17 +27,17 @@
 			<ul class="nav">
 				
 				<li class="dropdown">
-					<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b
+					<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes 类<b
 						class="caret"></b></a>
 
 					<ul class="dropdown-menu ">
 						
 						<li>
-							<a href="ScrollMagic.html">ScrollMagic</a>
+							<a href="ScrollMagic.html">ScrollMagic 控制器</a>
 						</li>
 						
 						<li>
-							<a href="ScrollScene.html">ScrollScene</a>
+							<a href="ScrollScene.html">ScrollScene 场景</a>
 						</li>
 						
 
@@ -45,7 +45,7 @@
 				</li>
 				
 				<li class="dropdown">
-					<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b
+					<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events 事件<b
 						class="caret"></b></a>
 
 					<ul class="dropdown-menu ">
@@ -160,26 +160,27 @@
 <pre class="prettyprint source lang-html"><code>&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.scrollmagic.min.js&quot;>&lt;/script></code></pre><p><em><strong>NOTE:</strong> The logging feature is removed in the minified version for obvious file size considerations.</em></p>
 <p>To have access to the debugging extension during development, include this file <strong>additionally</strong>:</p>
 <pre class="prettyprint source lang-html"><code>&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.scrollmagic.debug.js&quot;>&lt;/script></code></pre><p>You can remove the debugging extension for actual deployment.</p>
-<h2>用法</h2><p>The basic ScrollMagic design pattern is one controller, which has several scenes attached.<br>Each scene has a definite start and end position and defines what happens when the container is scrolled to the specific offset.</p>
+
+<h2>用法</h2><p>基本的 ScrollMagic 设计模式是一个控制器，它有好几个场景。<br>每个场景具有明确的开始和结束位置，并限定在容器中滚动到特定偏移会发生什么。</p>
 <pre class="prettyprint source lang-javascript"><code>/*
     Basic workflow example
 */
 
-// init controller
+// 初始化控制器
 var controller = new ScrollMagic();
 
-// assign handler &quot;scene&quot; and add it to controller
+// 分配处理器&quot;场景&quot;，并将其添加到控制器
 var scene = new ScrollScene({duration: 100})
-                .setPin(&quot;#my-sticky-element&quot;) // pins the element for a scroll distance of 100px
-                .addTo(controller); // add scene to controller
+                .setPin(&quot;#my-sticky-element&quot;) // 在一个 100px 的滚动距离内固定元素
+                .addTo(controller); // 将场景添加到控制器
 
-// adding multiple scenes at once
+// 一次添加多个场景
 var scene2 = new ScrollScene();
 var scene3;
 controller.addScene([
     scene2,
-    scene3 = new ScrollScene({duration: 200}), // add scene and assign handler &quot;scene2&quot;
-    new ScrollScene({offset: 20}) // add anonymous scene
+    scene3 = new ScrollScene({duration: 200}), // 添加场景并指派处理程序 &quot;scene2&quot;
+    new ScrollScene({offset: 20}) // 添加匿名场景
 ]);</code></pre>
 
 <h2>获取帮助</h2><p>To get started check out the available learning resources <a href="https://github.com/janpaepke/ScrollMagic/wiki">in the wiki section</a>.<br>Be sure to have a look at the <a href="http://janpaepke.github.com/ScrollMagic/examples/index.html">examples</a> to get source code pointers and make use of the <a href="http://janpaepke.github.com/ScrollMagic/docs/index.html">documentation</a> for a complete reference.</p>
