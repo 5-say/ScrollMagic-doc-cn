@@ -27,68 +27,68 @@
 			<ul class="nav">
 				
 				<li class="dropdown">
-					<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b
-						class="caret"></b></a>
+                    <a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes 类<b
+                        class="caret"></b></a>
 
-					<ul class="dropdown-menu ">
-						
-						<li>
-							<a href="ScrollMagic.html">ScrollMagic</a>
-						</li>
-						
-						<li>
-							<a href="ScrollScene.html">ScrollScene</a>
-						</li>
-						
+                    <ul class="dropdown-menu ">
+                        
+                        <li>
+                            <a href="ScrollMagic.html">ScrollMagic 控制器</a>
+                        </li>
+                        
+                        <li>
+                            <a href="ScrollScene.html">ScrollScene 场景</a>
+                        </li>
+                        
 
-					</ul>
-				</li>
-				
-				<li class="dropdown">
-					<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b
-						class="caret"></b></a>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events 事件<b
+                        class="caret"></b></a>
 
-					<ul class="dropdown-menu ">
-						
-						<li>
-							<a href="ScrollScene.html#event:change">change</a>
-						</li>
-						
-						<li>
-							<a href="ScrollScene.html#event:destroy">destroy</a>
-						</li>
-						
-						<li>
-							<a href="ScrollScene.html#event:end">end</a>
-						</li>
-						
-						<li>
-							<a href="ScrollScene.html#event:enter">enter</a>
-						</li>
-						
-						<li>
-							<a href="ScrollScene.html#event:leave">leave</a>
-						</li>
-						
-						<li>
-							<a href="ScrollScene.html#event:progress">progress</a>
-						</li>
-						
-						<li>
-							<a href="ScrollScene.html#event:shift">shift</a>
-						</li>
-						
-						<li>
-							<a href="ScrollScene.html#event:start">start</a>
-						</li>
-						
-						<li>
-							<a href="ScrollScene.html#event:update">update</a>
-						</li>
-						
+                    <ul class="dropdown-menu ">
+                        
+                        <li>
+                            <a href="ScrollScene.html#event:change">change</a>
+                        </li>
+                        
+                        <li>
+                            <a href="ScrollScene.html#event:destroy">destroy</a>
+                        </li>
+                        
+                        <li>
+                            <a href="ScrollScene.html#event:end">end</a>
+                        </li>
+                        
+                        <li>
+                            <a href="ScrollScene.html#event:enter">enter</a>
+                        </li>
+                        
+                        <li>
+                            <a href="ScrollScene.html#event:leave">leave</a>
+                        </li>
+                        
+                        <li>
+                            <a href="ScrollScene.html#event:progress">progress</a>
+                        </li>
+                        
+                        <li>
+                            <a href="ScrollScene.html#event:shift">shift</a>
+                        </li>
+                        
+                        <li>
+                            <a href="ScrollScene.html#event:start">start</a>
+                        </li>
+                        
+                        <li>
+                            <a href="ScrollScene.html#event:update">update</a>
+                        </li>
+                        
 
-					</ul>
-				</li>
+                    </ul>
+                </li>
 				
 			</ul>
 		</div>
@@ -128,7 +128,7 @@
     
     
     <div class="description">
-        <p>The main class that is needed once per scroll container.</p>
+        <p>这是每一个滚动容器都需要实例化一次的主类。</p>
     </div>
     
 
@@ -137,7 +137,7 @@
     
     
     
-        <h5>Parameters:</h5>
+        <h5>参数：</h5>
         
 
 <table class="params table table-striped">
@@ -190,7 +190,7 @@
 
             
 
-            <td class="description last"><p>An object containing one or more options for the controller.</p>
+            <td class="description last"><p>含有一个或多个选项作用于控制器的对象。</p>
                 <h6>Properties</h6>
                 
 
@@ -255,7 +255,7 @@
                 </td>
             
 
-            <td class="description last"><p>A selector, DOM object or a jQuery object that references the main container for scrolling.</p></td>
+            <td class="description last"><p>选择器，滚动的主容器所引用的 DOM对象 或 jQuery对象。</p></td>
         </tr>
 
 	
@@ -294,7 +294,7 @@
                 </td>
             
 
-            <td class="description last"><p>Sets the scroll mode to vertical (<code>true</code>) or horizontal (<code>false</code>) scrolling.</p></td>
+            <td class="description last"><p>设置滚动模式，垂直 (<code>true</code>) 或横向 (<code>false</code>) 滚动。</p></td>
         </tr>
 
 	
@@ -333,7 +333,7 @@
                 </td>
             
 
-            <td class="description last"><p>These options will be passed to every Scene that is added to the controller using the addScene method. For more information on Scene options see <a href="ScrollScene.html"><code>ScrollScene</code></a>.</p></td>
+            <td class="description last"><p>这些选项将被传递到使用 addScene 方法被添加到控制器的每一个场景。有关场景选项的详细信息，请参阅 <a href="ScrollScene.html"><code>ScrollScene</code></a>。</p></td>
         </tr>
 
 	
@@ -372,12 +372,12 @@
                 </td>
             
 
-            <td class="description last"><p>Loglevel for debugging. Note that logging is disabled in the minified version of ScrollMagic.</p>
+            <td class="description last"><p>调试日志等级。需要注意的是这在压缩版的 ScrollMagic 中是禁止使用的。</p>
 <ul>
-<li><code>0</code> =&gt; silent</li>
-<li><code>1</code> =&gt; errors</li>
-<li><code>2</code> =&gt; errors, warnings</li>
-<li><code>3</code> =&gt; errors, warnings, debuginfo</li>
+<li><code>0</code> =&gt; 静默</li>
+<li><code>1</code> =&gt; 错误</li>
+<li><code>2</code> =&gt; 错误，警告</li>
+<li><code>3</code> =&gt; 错误，警告，调试信息</li>
 </ul></td>
         </tr>
 
@@ -417,7 +417,7 @@
                 </td>
             
 
-            <td class="description last"><p>Some changes don't call events by default, like changing the container size or moving a scene trigger element.<br>                                                                                                              This interval polls these parameters to fire the necessary events.<br>                                                                                                              If you don't use custom containers, trigger elements or have static layouts, where the positions of the trigger elements don't change, you can set this to 0 disable interval checking and improve performance.</p></td>
+            <td class="description last"><p>有些更改默认不触发事件，如更改容器大小或移动中场景的切换元素。<br>                                                                                                              This interval polls these parameters to fire the necessary events.<br>                                                                                                              If you don't use custom containers, trigger elements or have static layouts, where the positions of the trigger elements don't change, you can set this to 0 disable interval checking and improve performance.</p></td>
         </tr>
 
 	
@@ -481,7 +481,11 @@
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// basic initializationvar controller = new ScrollMagic();// passing optionsvar controller = new ScrollMagic({container: "#myContainer", loglevel: 3});</pre>
+    <pre class="sunlight-highlight-javascript">// basic initialization
+var controller = new ScrollMagic();
+
+// passing options
+var controller = new ScrollMagic({container: "#myContainer", loglevel: 3});</pre>
 
 
     
@@ -525,7 +529,7 @@
     
     
     
-        <h5>Parameters:</h5>
+        <h5>参数：</h5>
         
 
 <table class="params table table-striped">
@@ -641,7 +645,14 @@
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// with a previously defined scenecontroller.addScene(scene);// with a newly created scene.controller.addScene(new ScrollScene({duration : 0}));// adding multiple scenescontroller.addScene([scene, scene2, new ScrollScene({duration : 0})]);</pre>
+    <pre class="sunlight-highlight-javascript">// with a previously defined scene
+controller.addScene(scene);
+
+// with a newly created scene.
+controller.addScene(new ScrollScene({duration : 0}));
+
+// adding multiple scenes
+controller.addScene([scene, scene2, new ScrollScene({duration : 0})]);</pre>
 
 
     
@@ -667,7 +678,7 @@
     
     
     
-        <h5>Parameters:</h5>
+        <h5>参数：</h5>
         
 
 <table class="params table table-striped">
@@ -800,7 +811,11 @@
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// without resetting the scenescontroller = controller.destroy();// with scene resetcontroller = controller.destroy(true);</pre>
+    <pre class="sunlight-highlight-javascript">// without resetting the scenes
+controller = controller.destroy();
+
+// with scene reset
+controller = controller.destroy(true);</pre>
 
 
     
@@ -826,7 +841,7 @@
     
     
     
-        <h5>Parameters:</h5>
+        <h5>参数：</h5>
         
 
 <table class="params table table-striped">
@@ -942,7 +957,11 @@
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// remove a scene from the controllercontroller.removeScene(scene);// remove multiple scenes from the controllercontroller.removeScene([scene, scene2, scene3]);</pre>
+    <pre class="sunlight-highlight-javascript">// remove a scene from the controller
+controller.removeScene(scene);
+
+// remove multiple scenes from the controller
+controller.removeScene([scene, scene2, scene3]);</pre>
 
 
     
@@ -968,7 +987,7 @@
     
     
     
-        <h5>Parameters:</h5>
+        <h5>参数：</h5>
         
 
 <table class="params table table-striped">
@@ -1102,7 +1121,20 @@
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// scroll to an offset of 100controller.scrollTo(100);// scroll to a DOM elementcontroller.scrollTo("#anchor");// scroll to the beginning of a scenevar scene = new ScrollScene({offset: 200});controller.scrollTo(scene);// define a new scroll position modification function (animate instead of jump)controller.scrollTo(function (newScrollPos) {	$("body").animate({scrollTop: newScrollPos});});</pre>
+    <pre class="sunlight-highlight-javascript">// scroll to an offset of 100
+controller.scrollTo(100);
+
+// scroll to a DOM element
+controller.scrollTo("#anchor");
+
+// scroll to the beginning of a scene
+var scene = new ScrollScene({offset: 200});
+controller.scrollTo(scene);
+
+// define a new scroll position modification function (animate instead of jump)
+controller.scrollTo(function (newScrollPos) {
+	$("body").animate({scrollTop: newScrollPos});
+});</pre>
 
 
     
@@ -1129,7 +1161,7 @@ For this case there will also be the need to provide a custom function to calcul
     
     
     
-        <h5>Parameters:</h5>
+        <h5>参数：</h5>
         
 
 <table class="params table table-striped">
@@ -1262,7 +1294,11 @@ For this case there will also be the need to provide a custom function to calcul
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// update the controller on next cycle (saves performance due to elimination of redundant updates)controller.update();// update the controller immediatelycontroller.update(true);</pre>
+    <pre class="sunlight-highlight-javascript">// update the controller on next cycle (saves performance due to elimination of redundant updates)
+controller.update();
+
+// update the controller immediately
+controller.update(true);</pre>
 
 
     
@@ -1288,7 +1324,7 @@ For this case there will also be the need to provide a custom function to calcul
     
     
     
-        <h5>Parameters:</h5>
+        <h5>参数：</h5>
         
 
 <table class="params table table-striped">
@@ -1456,7 +1492,14 @@ For this case there will also be the need to provide a custom function to calcul
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// update a specific scene on next cyclecontroller.updateScene(scene);// update a specific scene immediatelycontroller.updateScene(scene, true);// update multiple scenes scene on next cyclecontroller.updateScene([scene1, scene2, scene3]);</pre>
+    <pre class="sunlight-highlight-javascript">// update a specific scene on next cycle
+controller.updateScene(scene);
+
+// update a specific scene immediately
+controller.updateScene(scene, true);
+
+// update multiple scenes scene on next cycle
+controller.updateScene([scene1, scene2, scene3]);</pre>
 
 
     
@@ -1486,7 +1529,7 @@ For this case there will also be the need to provide a custom function to calcul
     
     
     
-        <h5>Parameters:</h5>
+        <h5>参数：</h5>
         
 
 <table class="params table table-striped">
@@ -1614,7 +1657,11 @@ For this case there will also be the need to provide a custom function to calcul
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// get the current valuevar enabled = controller.enabled();// disable the controllercontroller.enabled(false);</pre>
+    <pre class="sunlight-highlight-javascript">// get the current value
+var enabled = controller.enabled();
+
+// disable the controller
+controller.enabled(false);</pre>
 
 
     
@@ -1640,7 +1687,7 @@ For this case there will also be the need to provide a custom function to calcul
     
     
     
-        <h5>Parameters:</h5>
+        <h5>参数：</h5>
         
 
 <table class="params table table-striped">
@@ -1768,7 +1815,11 @@ For this case there will also be the need to provide a custom function to calcul
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// get the current valuevar loglevel = controller.loglevel();// set a new valuecontroller.loglevel(3);</pre>
+    <pre class="sunlight-highlight-javascript">// get the current value
+var loglevel = controller.loglevel();
+
+// set a new value
+controller.loglevel(3);</pre>
 
 
     
@@ -1798,7 +1849,7 @@ When used as a setter this method prodes a way to permanently overwrite the cont
     
     
     
-        <h5>Parameters:</h5>
+        <h5>参数：</h5>
         
 
 <table class="params table table-striped">
@@ -1926,7 +1977,13 @@ When used as a setter this method prodes a way to permanently overwrite the cont
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// get the current scroll Positionvar scrollPos = controller.scrollPos();// set a new scroll position calculation methodcontroller.scrollPos(function () {	return this.info("vertical") ? -$mychildcontainer.y : -$mychildcontainer.x});</pre>
+    <pre class="sunlight-highlight-javascript">// get the current scroll Position
+var scrollPos = controller.scrollPos();
+
+// set a new scroll position calculation method
+controller.scrollPos(function () {
+	return this.info("vertical") ? -$mychildcontainer.y : -$mychildcontainer.x
+});</pre>
 
 
     
@@ -1956,7 +2013,7 @@ When used as a setter this method prodes a way to permanently overwrite the cont
     
     
     
-        <h5>Parameters:</h5>
+        <h5>参数：</h5>
         
 
 <table class="params table table-striped">
@@ -2092,7 +2149,11 @@ When used as a setter this method prodes a way to permanently overwrite the cont
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// returns the current scroll position (number)var scrollPos = controller.info("scrollPos");// returns all infos as an objectvar infos = controller.info();</pre>
+    <pre class="sunlight-highlight-javascript">// returns the current scroll position (number)
+var scrollPos = controller.info("scrollPos");
+
+// returns all infos as an object
+var infos = controller.info();</pre>
 
 
     
