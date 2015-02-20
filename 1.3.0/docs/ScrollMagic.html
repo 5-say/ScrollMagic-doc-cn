@@ -928,7 +928,7 @@ controller.scrollTo(function (newScrollPos) {
         
             
 <dt>
-    <h4 class="name" id="update"><span class="type-signature"></span>update<span class="signature">(<span class="optional">immediately</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollMagic.html">ScrollMagic</a>}</span> 更新</h4>
+    <h4 class="name" id="update"><span class="type-signature"></span>update<span class="signature">(<span class="optional">immediately</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollMagic.html">ScrollMagic</a>}</span> 更新控制器</h4>
     
     
 </dt>
@@ -1091,7 +1091,7 @@ controller.update(true);</pre>
         
             
 <dt>
-    <h4 class="name" id="updateScene"><span class="type-signature"></span>updateScene<span class="signature">(ScrollScene, <span class="optional">immediately</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollMagic.html">ScrollMagic</a>}</span></h4>
+    <h4 class="name" id="updateScene"><span class="type-signature"></span>updateScene<span class="signature">(ScrollScene, <span class="optional">immediately</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollMagic.html">ScrollMagic</a>}</span> 更新场景</h4>
     
     
 </dt>
@@ -1099,7 +1099,7 @@ controller.update(true);</pre>
     
     
     <div class="description">
-        <p>Update one ore more scene(s) according to the scroll position of the container.<br>This is the equivalent to <code>ScrollScene.update()</code>.<br>The update method calculates the scene's start and end position (based on the trigger element, trigger hook, duration and offset) and checks it against the current scroll position of the container.<br>It then updates the current scene state accordingly (or does nothing, if the state is already correct) – Pins will be set to their correct position and tweens will be updated to their correct progress.<br><em><strong>注意：</strong> This method gets called constantly whenever ScrollMagic detects a change. The only application for you is if you change something outside of the realm of ScrollMagic, like moving the trigger or changing tween parameters.</em></p>
+        <p>根据容器的滚动位置更新一个或多个场景。<br>这相当于 <code>ScrollScene.update()</code>.<br>此更新方法用来计算场景的开始和结束位置（基于所述触发元件，触发挂钩，持续时间和偏移），并检查其相对于容器的当前的滚动位置。<br>然后，它相应地更新当前场景的状态（或什么都不做，如果状态已经是正确的） - pins 都将被设置到它们的正确位置，而 tweens 将被更新到正确的进度。<br><em><strong>注意：</strong>此方法被调用时将不断检测 ScrollMagic 的变更。如果你想在 ScrollMagic 的领域之外改变什么，如移动 trigger 或更改 tween 的参数。</em></p>
     </div>
     
 
@@ -1165,7 +1165,7 @@ controller.update(true);</pre>
                 </td>
             
 
-            <td class="description last"><p>ScrollScene or Array of ScrollScenes that is/are supposed to be updated.</p></td>
+            <td class="description last"><p>需要更新的场景或场景数组。</p></td>
         </tr>
 
 	
@@ -1204,7 +1204,7 @@ controller.update(true);</pre>
                 </td>
             
 
-            <td class="description last"><p>If <code>true</code> the update will be instant, if <code>false</code> it will wait until next update cycle.<br>                                                   This is useful when changing multiple properties of the scene - this way it will only be updated once all new properties are set (updateScenes).</p></td>
+            <td class="description last"><p>若为 <code>true</code> 则实时更新，若为 <code>false</code> 它将等到下一个更新周期。<br>改变场景的多个属性时，这是非常有用的 - 这种方式，将只进行一次更新来应用被（updateScenes）设置的所有新属性。</p></td>
         </tr>
 
 	
@@ -1291,12 +1291,12 @@ controller.updateScene([scene1, scene2, scene3]);</pre>
 
         </dl>
     
-        <h3 class="subsection-title">Parameters (getter / setter)</h3>
+        <h3 class="subsection-title">Parameters (getter / setter) 参数辅助</h3>
 
         <dl>
             
 <dt>
-    <h4 class="name" id="enabled"><span class="type-signature"></span>enabled<span class="signature">(<span class="optional">newState</span>)</span><span class="type-signature"> &rarr; {boolean|<a href="ScrollMagic.html">ScrollMagic</a>}</span></h4>
+    <h4 class="name" id="enabled"><span class="type-signature"></span>enabled<span class="signature">(<span class="optional">newState</span>)</span><span class="type-signature"> &rarr; {boolean|<a href="ScrollMagic.html">ScrollMagic</a>}</span> 状态开关</h4>
     
     
 </dt>
@@ -1304,7 +1304,7 @@ controller.updateScene([scene1, scene2, scene3]);</pre>
     
     
     <div class="description">
-        <p><strong>Get</strong> or <strong>Set</strong> the current enabled state of the controller.<br>This can be used to disable all Scenes connected to the controller without destroying or removing them.</p>
+        <p><strong>获取</strong> 或 <strong>设置</strong> 控制器的当前启用状态。<br>这可以用来，在不破坏或删除，连接到控制器的所有场景的情况下，禁用它们。</p>
     </div>
     
 
@@ -1366,7 +1366,7 @@ controller.updateScene([scene1, scene2, scene3]);</pre>
 
             
 
-            <td class="description last"><p>The new enabled state of the controller <code>true</code> or <code>false</code>.</p></td>
+            <td class="description last"><p>控制器新的启用状态 <code>true</code> 或 <code>false</code>.</p></td>
         </tr>
 
 	
@@ -1454,7 +1454,7 @@ controller.enabled(false);</pre>
         
             
 <dt>
-    <h4 class="name" id="loglevel"><span class="type-signature"></span>loglevel<span class="signature">(<span class="optional">newLoglevel</span>)</span><span class="type-signature"> &rarr; {number|<a href="ScrollMagic.html">ScrollMagic</a>}</span></h4>
+    <h4 class="name" id="loglevel"><span class="type-signature"></span>loglevel<span class="signature">(<span class="optional">newLoglevel</span>)</span><span class="type-signature"> &rarr; {number|<a href="ScrollMagic.html">ScrollMagic</a>}</span> 日志级别</h4>
     
     
 </dt>
@@ -1462,7 +1462,7 @@ controller.enabled(false);</pre>
     
     
     <div class="description">
-        <p><strong>Get</strong> or <strong>Set</strong> the current loglevel option value.</p>
+        <p><strong>获取</strong> 或 <strong>设置</strong> 当前日志级别选项的值。</p>
     </div>
     
 
@@ -1524,7 +1524,7 @@ controller.enabled(false);</pre>
 
             
 
-            <td class="description last"><p>The new loglevel setting of the ScrollMagic controller. <code>[0-3]</code></p></td>
+            <td class="description last"><p>ScrollMagic控制器 的新日志级别。 <code>[0-3]</code></p></td>
         </tr>
 
 	
@@ -1612,7 +1612,7 @@ controller.loglevel(3);</pre>
         
             
 <dt>
-    <h4 class="name" id="scrollPos"><span class="type-signature"></span>scrollPos<span class="signature">(<span class="optional">scrollPosMethod</span>)</span><span class="type-signature"> &rarr; {number|<a href="ScrollMagic.html">ScrollMagic</a>}</span></h4>
+    <h4 class="name" id="scrollPos"><span class="type-signature"></span>scrollPos<span class="signature">(<span class="optional">scrollPosMethod</span>)</span><span class="type-signature"> &rarr; {number|<a href="ScrollMagic.html">ScrollMagic</a>}</span> 滚动偏移量</h4>
     
     
 </dt>
@@ -1620,11 +1620,11 @@ controller.loglevel(3);</pre>
     
     
     <div class="description">
-        <p><strong>Get</strong> the current scrollPosition or <strong>Set</strong> a new method to calculate it.<br>-&gt; <strong>GET</strong>:
-When used as a getter this function will return the current scroll position.<br>To get a cached value use ScrollMagic.info(&quot;scrollPos&quot;), which will be updated in the update cycle.<br>For vertical controllers it will return the top scroll offset and for horizontal applications it will return the left offset.</p>
-<p>-&gt; <strong>SET</strong>:
-When used as a setter this method prodes a way to permanently overwrite the controller's scroll position calculation.<br>A typical usecase is when the scroll position is not reflected by the containers scrollTop or scrollLeft values, but for example by the inner offset of a child container.<br>Moving a child container inside a parent is a commonly used method for several scrolling frameworks, including iScroll.<br>By providing an alternate calculation function you can make sure ScrollMagic receives the correct scroll position.<br>Please also bear in mind that your function should return y values for vertical scrolls an x for horizontals.</p>
-<p>To change the current scroll position please use <code>ScrollMagic.scrollTo()</code>.</p>
+        <p><strong>获取</strong> 当前的滚动偏移量或 <strong>设置</strong>一个新的方法来计算它。<br>-&gt; <strong>获取</strong>:
+以 getter 方式使用时，该方法将返回当前的滚动位置。<br>可以使用 ScrollMagic.info(&quot;scrollPos&quot;) 来获取一个缓存值，这将在每一个更新周期被更新。<br>对于垂直的控制器返回顶部滚动偏移，而对于横向应用它将返回左偏移。</p>
+<p>-&gt; <strong>设置</strong>:
+当作为一个 setter 使用时，此方法将永久性地覆盖控制器的滚动位置计算方式。<br>一种典型的用例是，当滚动位置不是由容器的 scrollTop 或 scrollLeft 值反射，而是由内部的一个子容器的偏移决定时。<br>对于几个常见的滚动框架，移动父元素内部的子容器是一种常用的方法，包括 iScroll。<br>通过提供一个备用计算功能可以确保 ScrollMagic 接收到正确的滚动位置。<br>也请记住，你的函数应该为垂直滚动返回一个 y值，为水平滚动返回一个 x值。</p>
+<p>要改变当前的滚动位置，请使用 <code>ScrollMagic.scrollTo()</code>.</p>
     </div>
     
 
@@ -1686,7 +1686,7 @@ When used as a setter this method prodes a way to permanently overwrite the cont
 
             
 
-            <td class="description last"><p>The function to be used for the scroll position calculation of the container.</p></td>
+            <td class="description last"><p>用于滚动位置计算的自定义函数。</p></td>
         </tr>
 
 	
@@ -1775,12 +1775,12 @@ controller.scrollPos(function () {
 
         </dl>
     
-        <h3 class="subsection-title">Properties (getter)</h3>
+        <h3 class="subsection-title">Properties (getter) 性能</h3>
 
         <dl>
             
 <dt>
-    <h4 class="name" id="info"><span class="type-signature"></span>info<span class="signature">(<span class="optional">about</span>)</span><span class="type-signature"> &rarr; {mixed|object}</span></h4>
+    <h4 class="name" id="info"><span class="type-signature"></span>info<span class="signature">(<span class="optional">about</span>)</span><span class="type-signature"> &rarr; {mixed|object}</span> 信息</h4>
     
     
 </dt>
@@ -1788,7 +1788,7 @@ controller.scrollPos(function () {
     
     
     <div class="description">
-        <p><strong>Get</strong> all infos or one in particular about the controller.</p>
+        <p><strong>获取</strong>控制器的所有相关信息或其中之一。</p>
     </div>
     
 
@@ -1850,14 +1850,14 @@ controller.scrollPos(function () {
 
             
 
-            <td class="description last"><p>If passed only this info will be returned instead of an object containing all.<br>                                      Valid options are:</p>
+            <td class="description last"><p>如果传递参数将只返回一个指定信息，而不是包含所有信息的对象。<br>                                      有效的参数有：</p>
 <ul>
-<li><code>&quot;size&quot;</code> =&gt; the current viewport size of the container</li>
-<li><code>&quot;vertical&quot;</code> =&gt; true if vertical scrolling, otherwise false</li>
-<li><code>&quot;scrollPos&quot;</code> =&gt; the current scroll position</li>
-<li><code>&quot;scrollDirection&quot;</code> =&gt; the last known direction of the scroll</li>
-<li><code>&quot;container&quot;</code> =&gt; the container element</li>
-<li><code>&quot;isDocument&quot;</code> =&gt; true if container element is the document.</li>
+<li><code>&quot;size&quot;</code> =&gt; 容器的当前视口大小</li>
+<li><code>&quot;vertical&quot;</code> =&gt; 若垂直滚动则返回 true，反之为 false</li>
+<li><code>&quot;scrollPos&quot;</code> =&gt; 当前滚动的偏移量</li>
+<li><code>&quot;scrollDirection&quot;</code> =&gt; 已知的最后的滚动方向</li>
+<li><code>&quot;container&quot;</code> =&gt; 容器元素</li>
+<li><code>&quot;isDocument&quot;</code> =&gt; 若容器元素为 document 则返回 true</li>
 </ul></td>
         </tr>
 
