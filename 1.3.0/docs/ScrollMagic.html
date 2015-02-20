@@ -18,79 +18,69 @@
 	<link type="text/css" rel="stylesheet" href="styles/site.cosmo.css">
 	
 </head>
-
 <body>
+
 <div class="container-fluid">
 	<div class="navbar navbar-fixed-top navbar-inverse">
 		<div class="navbar-inner">
 			<a class="brand" href="index.html">ScrollMagic</a>
-			<ul class="nav">
-				
-				<li class="dropdown">
-                    <a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes 类<b
-                        class="caret"></b></a>
-
+            <ul class="nav">
+                <li class="dropdown">
+                    <a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">
+                        Classes 类 <b class="caret"></b>
+                    </a>
                     <ul class="dropdown-menu ">
-                        
-                        <li>
-                            <a href="ScrollMagic.html">ScrollMagic 控制器</a>
-                        </li>
-                        
-                        <li>
-                            <a href="ScrollScene.html">ScrollScene 场景</a>
-                        </li>
-                        
-
+                        <li><a href="ScrollMagic.html">ScrollMagic 控制器</a></li>
+                        <li><a href="ScrollScene.html">ScrollScene 场景</a></li>
                     </ul>
                 </li>
-                
-                <li class="dropdown">
-                    <a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events 事件<b
-                        class="caret"></b></a>
 
+                <li class="dropdown">
+                    <a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">
+                        Events 事件 <b class="caret"></b>
+                    </a>
                     <ul class="dropdown-menu ">
-                        
+
                         <li>
                             <a href="ScrollScene.html#event:change">change</a>
                         </li>
-                        
+
                         <li>
                             <a href="ScrollScene.html#event:destroy">destroy</a>
                         </li>
-                        
+
                         <li>
                             <a href="ScrollScene.html#event:end">end</a>
                         </li>
-                        
+
                         <li>
                             <a href="ScrollScene.html#event:enter">enter</a>
                         </li>
-                        
+
                         <li>
                             <a href="ScrollScene.html#event:leave">leave</a>
                         </li>
-                        
+
                         <li>
                             <a href="ScrollScene.html#event:progress">progress</a>
                         </li>
-                        
+
                         <li>
                             <a href="ScrollScene.html#event:shift">shift</a>
                         </li>
-                        
+
                         <li>
                             <a href="ScrollScene.html#event:start">start</a>
                         </li>
-                        
+
                         <li>
                             <a href="ScrollScene.html#event:update">update</a>
                         </li>
-                        
 
                     </ul>
                 </li>
-				
-			</ul>
+
+            </ul>
 		</div>
 	</div>
 
@@ -100,329 +90,124 @@
 		<div class="span8">
 			
 				<div id="main">
-					
+                    
+                	<h1 class="page-title">Class: ScrollMagic</h1>
 
+                    <section>
 
-	<h1 class="page-title">Class: ScrollMagic</h1>
-<section>
+                        <header><h2>ScrollMagic</h2></header>
 
-<header>
-    <h2>
-    ScrollMagic
-    </h2>
+                        <article>
+                            <div class="container-overview">
+                                <dt>
+                                    <h4 class="name" id="ScrollMagic">
+                                        <span class="type-signature"></span>new ScrollMagic<span class="signature">(<span class="optional">options</span>)</span><span class="type-signature"></span>
+                                    </h4>
+                                </dt>
     
-</header>
+                                <dd>
+                                    <div class="description">
+                                        <p>这是每一个滚动容器都需要实例化一次的主类。</p>
+                                    </div>
+                                    <h5>参数：</h5>
+                                    
+                                    <table class="params table table-striped">
+                                        <thead>
+                                        	<tr>
+                                        		<th>Name</th>
+                                        		<th>Type</th>
+                                        		<th>Argument</th>
+                                        		<th class="last">Description</th>
+                                        	</tr>
+                                    	</thead>
 
-<article>
-    <div class="container-overview">
-    
-
-    
-        
-<dt>
-    <h4 class="name" id="ScrollMagic"><span class="type-signature"></span>new ScrollMagic<span class="signature">(<span class="optional">options</span>)</span><span class="type-signature"></span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>这是每一个滚动容器都需要实例化一次的主类。</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-        <h5>参数：</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-
-		<th>Type</th>
-
-		
-		<th>Argument</th>
-		
-
-		
-
-		<th class="last">Description</th>
-	</tr>
-	</thead>
 
 	<tbody>
 	
 
         <tr>
             
-                <td class="name"><code>options</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last"><p>含有一个或多个选项作用于控制器的对象。</p>
+            <td class="name"><code>options</code></td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="attributes">&lt;optional><br></td>
+            <td class="description last">
+                <p>含有一个或多个选项作用于控制器的对象。</p>
                 <h6>Properties</h6>
-                
-
-<table class="params table table-striped">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-
-		<th>Type</th>
-
-		
-		<th>Argument</th>
-		
-
-		
-		<th>Default</th>
-		
-
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-
-	<tbody>
-	
-
-        <tr>
-            
-                <td class="name"><code>container</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-|
-
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    window
-                
-                </td>
-            
-
-            <td class="description last"><p>选择器，滚动的主容器所引用的 DOM对象 或 jQuery对象。</p></td>
-        </tr>
-
-	
-
-        <tr>
-            
-                <td class="name"><code>vertical</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    true
-                
-                </td>
-            
-
-            <td class="description last"><p>设置滚动模式，垂直 (<code>true</code>) 或横向 (<code>false</code>) 滚动。</p></td>
-        </tr>
-
-	
-
-        <tr>
-            
-                <td class="name"><code>globalSceneOptions</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    {}
-                
-                </td>
-            
-
-            <td class="description last"><p>这些选项将被传递到使用 addScene 方法被添加到控制器的每一个场景。有关场景选项的详细信息，请参阅 <a href="ScrollScene.html"><code>ScrollScene</code></a>。</p></td>
-        </tr>
-
-	
-
-        <tr>
-            
-                <td class="name"><code>loglevel</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    2
-                
-                </td>
-            
-
-            <td class="description last"><p>调试日志等级。需要注意的是这在压缩版的 ScrollMagic 中是禁止使用的。</p>
-<ul>
-<li><code>0</code> =&gt; 静默</li>
-<li><code>1</code> =&gt; 错误</li>
-<li><code>2</code> =&gt; 错误，警告</li>
-<li><code>3</code> =&gt; 错误，警告，调试信息</li>
-</ul></td>
-        </tr>
-
-	
-
-        <tr>
-            
-                <td class="name"><code>refreshInterval</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    100
-                
-                </td>
-            
-
-            <td class="description last"><p>有些更改默认不触发事件，如更改容器大小或移动中场景的切换元素。<br>                                                                                                              This interval polls these parameters to fire the necessary events.<br>                                                                                                              If you don't use custom containers, trigger elements or have static layouts, where the positions of the trigger elements don't change, you can set this to 0 disable interval checking and improve performance.</p></td>
-        </tr>
-
-	
-	</tbody>
-</table>
+                <table class="params table table-striped">
+                    <thead>
+                    	<tr>
+                    		<th>Name</th>
+                    		<th>Type</th>
+                    		<th>Argument</th>
+                    		<th>Default</th>
+                    		<th class="last">Description</th>
+                    	</tr>
+                	</thead>
+                	<tbody>
+                        <tr>
+                            <td class="name"><code>container</code></td>
+                            <td class="type">
+                                <span class="param-type">string</span>
+                                |
+                                <span class="param-type">object</span>
+                            </td>
+                            <td class="attributes">&lt;optional><br></td>
+                            <td class="default">window</td>
+                            <td class="description last"><p>选择器，滚动的主容器所引用的 DOM对象 或 jQuery对象。</p></td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>vertical</code></td>
+                            <td class="type"><span class="param-type">boolean</span></td>
+                            <td class="attributes">&lt;optional><br></td>
+                            <td class="default">true</td>
+                            <td class="description last">
+                                <p>设置滚动模式，垂直 (<code>true</code>) 或横向 (<code>false</code>) 滚动。</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>globalSceneOptions</code></td>
+                            <td class="type"><span class="param-type">object</span></td>
+                            <td class="attributes">&lt;optional><br></td>
+                            <td class="default">{}</td>
+                            <td class="description last">
+                                <p>
+                                    这些选项将被传递到使用 addScene 方法被添加到控制器的每一个场景。有关场景选项的详细信息，请参阅
+                                    <a href="ScrollScene.html"><code>ScrollScene</code></a>。
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>loglevel</code></td>
+                            <td class="type"><span class="param-type">number</span></td>
+                            <td class="attributes">&lt;optional><br></td>
+                            <td class="default">2</td>
+                            <td class="description last">
+                                <p>调试日志等级。需要注意的是这在压缩版的 ScrollMagic 中是禁止使用的。</p>
+                                <ul>
+                                    <li><code>0</code>=&gt; 静默</li>
+                                    <li><code>1</code>=&gt; 错误</li>
+                                    <li><code>2</code>=&gt; 错误，警告</li>
+                                    <li><code>3</code>=&gt; 错误，警告，调试信息</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>refreshInterval</code></td>
+                            <td class="type"><span class="param-type">boolean</span></td>
+                            <td class="attributes">&lt;optional><br></td>
+                            <td class="default">100</td>
+                            <td class="description last">
+                                <p>
+                                    有些更改默认不触发事件，如更改容器大小或移动中场景的元素切换。
+                                    <br>                        
+                                    在指定间隔内轮询这些参数，以触发必要的事件。
+                                    <br>                        
+                                    如果不使用自定义的容器，触发因素或具有静态布局，在触发元素的位置不会改变的情况下，你可以将其设置为 0 禁用时间间隔检查并提高性能。
+                                </p>
+                            </td>
+                        </tr>
+                	</tbody>
+                </table>
 
             </td>
         </tr>
@@ -481,10 +266,10 @@
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// basic initialization
+    <pre class="sunlight-highlight-javascript">// 基本的初始化
 var controller = new ScrollMagic();
 
-// passing options
+// 传递参数
 var controller = new ScrollMagic({container: "#myContainer", loglevel: 3});</pre>
 
 
@@ -507,12 +292,12 @@ var controller = new ScrollMagic({container: "#myContainer", loglevel: 3});</pre
     
 
     
-        <h3 class="subsection-title">Control Methods</h3>
+        <h3 class="subsection-title">Control Methods 控制方法</h3>
 
         <dl>
             
 <dt>
-    <h4 class="name" id="addScene"><span class="type-signature"></span>addScene<span class="signature">(ScrollScene)</span><span class="type-signature"> &rarr; {<a href="ScrollMagic.html">ScrollMagic</a>}</span></h4>
+    <h4 class="name" id="addScene"><span class="type-signature"></span>addScene<span class="signature">(ScrollScene)</span><span class="type-signature"> &rarr; {<a href="ScrollMagic.html">ScrollMagic</a>}</span> 添加场景</h4>
     
     
 </dt>
@@ -520,7 +305,7 @@ var controller = new ScrollMagic({container: "#myContainer", loglevel: 3});</pre
     
     
     <div class="description">
-        <p>Add one ore more scene(s) to the controller.<br>This is the equivalent to <code>ScrollScene.addTo(controller)</code>.</p>
+        <p>添加一个或多个场景到控制器<br>这相当于 <code>ScrollScene.addTo(controller)</code>.</p>
     </div>
     
 
@@ -573,7 +358,7 @@ var controller = new ScrollMagic({container: "#myContainer", loglevel: 3});</pre
 
             
 
-            <td class="description last"><p>ScrollScene or Array of ScrollScenes to be added to the controller.</p></td>
+            <td class="description last"><p>需要被添加到控制器的场景或场景数组。</p></td>
         </tr>
 
 	
@@ -661,7 +446,7 @@ controller.addScene([scene, scene2, new ScrollScene({duration : 0})]);</pre>
         
             
 <dt>
-    <h4 class="name" id="destroy"><span class="type-signature"></span>destroy<span class="signature">(<span class="optional">resetScenes</span>)</span><span class="type-signature"> &rarr; {null}</span></h4>
+    <h4 class="name" id="destroy"><span class="type-signature"></span>destroy<span class="signature">(<span class="optional">resetScenes</span>)</span><span class="type-signature"> &rarr; {null}</span> 销毁控制器</h4>
     
     
 </dt>
@@ -669,7 +454,7 @@ controller.addScene([scene, scene2, new ScrollScene({duration : 0})]);</pre>
     
     
     <div class="description">
-        <p>Destroy the Controller, all Scenes and everything.</p>
+        <p>销毁控制器，全部场景和所有相关的一切。</p>
     </div>
     
 
@@ -739,7 +524,7 @@ controller.addScene([scene, scene2, new ScrollScene({duration : 0})]);</pre>
                 </td>
             
 
-            <td class="description last"><p>If <code>true</code> the pins and tweens (if existent) of all scenes will be reset.</p></td>
+            <td class="description last"><p>若为 <code>true</code> 则所有相关场景内的 pins 和 tweens (如果存在) 都将被重置。</p></td>
         </tr>
 
 	
@@ -824,7 +609,7 @@ controller = controller.destroy(true);</pre>
         
             
 <dt>
-    <h4 class="name" id="removeScene"><span class="type-signature"></span>removeScene<span class="signature">(ScrollScene)</span><span class="type-signature"> &rarr; {<a href="ScrollMagic.html">ScrollMagic</a>}</span></h4>
+    <h4 class="name" id="removeScene"><span class="type-signature"></span>removeScene<span class="signature">(ScrollScene)</span><span class="type-signature"> &rarr; {<a href="ScrollMagic.html">ScrollMagic</a>}</span> 移除场景</h4>
     
     
 </dt>
@@ -832,7 +617,7 @@ controller = controller.destroy(true);</pre>
     
     
     <div class="description">
-        <p>Remove one ore more scene(s) from the controller.<br>This is the equivalent to <code>ScrollScene.remove()</code>.</p>
+        <p>从控制器中移除一个或多个场景。<br>这相当于 <code>ScrollScene.remove()</code>.</p>
     </div>
     
 
@@ -885,7 +670,7 @@ controller = controller.destroy(true);</pre>
 
             
 
-            <td class="description last"><p>ScrollScene or Array of ScrollScenes to be removed from the controller.</p></td>
+            <td class="description last"><p>需要从控制器中移除的场景或场景的数组。</p></td>
         </tr>
 
 	
@@ -970,7 +755,7 @@ controller.removeScene([scene, scene2, scene3]);</pre>
         
             
 <dt>
-    <h4 class="name" id="scrollTo"><span class="type-signature"></span>scrollTo<span class="signature">(<span class="optional">scrollTarget</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollMagic.html">ScrollMagic</a>}</span></h4>
+    <h4 class="name" id="scrollTo"><span class="type-signature"></span>scrollTo<span class="signature">(<span class="optional">scrollTarget</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollMagic.html">ScrollMagic</a>}</span> 滚动到</h4>
     
     
 </dt>
@@ -978,7 +763,7 @@ controller.removeScene([scene, scene2, scene3]);</pre>
     
     
     <div class="description">
-        <p>Scroll to a numeric scroll offset, a DOM element, the start of a scene or provide an alternate method for scrolling.<br>For vertical controllers it will change the top scroll offset and for horizontal applications it will change the left offset.</p>
+        <p>滚动到一个偏移量，一个 DOM元素，场景的起点或代替滚动动作的自定义方法。<br>对于垂直控制器，它会改变顶部滚动偏移量。而水平的应用将改变左偏移量。</p>
     </div>
     
 
@@ -1040,12 +825,12 @@ controller.removeScene([scene, scene2, scene3]);</pre>
 
             
 
-            <td class="description last"><p>The supplied argument can be one of these types:</p>
+            <td class="description last"><p>所提供的参数可以是下列类型之一:</p>
 <ol>
-<li><code>number</code> -&gt; The container will scroll to this new scroll offset.</li>
-<li><code>string</code> or <code>object</code> -&gt; Can be a selector, a DOM object or a jQuery element.<br>The container will scroll to the position of this element.</li>
-<li><code>ScrollScene</code> -&gt; The container will scroll to the start of this scene.</li>
-<li><code>function</code> -&gt; This function will be used as a callback for future scroll position modifications.<br>This provides a way for you to change the behaviour of scrolling and adding new behaviour like animation. The callback receives the new scroll position as a parameter and a reference to the container element using <code>this</code>.<br><em><strong>NOTE:</strong> All other options will still work as expected, using the new function to scroll.</em></li>
+<li><code>number</code> -&gt; 容器将滚动到这个新的滚动偏移量。</li>
+<li><code>string</code> or <code>object</code> -&gt; 可以是一个选择器，一个DOM对象或一个jQuery元素。<br>容器将滚动到该元素的位置。</li>
+<li><code>ScrollScene</code> -&gt; 容器将滚动到这一场景的开始位置。</li>
+<li><code>function</code> -&gt; 此方法将被用作未来滚动位置修改时的回调函数。<br>这提供了一种方法可以让你改变滚动并添加喜欢的动画行为。回调接收新的滚动的位置作为参数，并使用 <code>this</code> 来引用容器元素。<br><em><strong>注意：</strong>当使用新的回调进行滚动时，所有其它选项仍会按照预期工作。</em></li>
 </ol></td>
         </tr>
 
@@ -1143,7 +928,7 @@ controller.scrollTo(function (newScrollPos) {
         
             
 <dt>
-    <h4 class="name" id="update"><span class="type-signature"></span>update<span class="signature">(<span class="optional">immediately</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollMagic.html">ScrollMagic</a>}</span></h4>
+    <h4 class="name" id="update"><span class="type-signature"></span>update<span class="signature">(<span class="optional">immediately</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollMagic.html">ScrollMagic</a>}</span> 更新</h4>
     
     
 </dt>
@@ -1151,8 +936,7 @@ controller.scrollTo(function (newScrollPos) {
     
     
     <div class="description">
-        <p>Updates the controller params and calls updateScene on every scene, that is attached to the controller.<br>See <code>ScrollMagic.updateScene()</code> for more information about what this means.<br>In most cases you will not need this function, as it is called constantly, whenever ScrollMagic detects a state change event, like resize or scroll.<br>The only application for this method is when ScrollMagic fails to detect these events.<br>One application is with some external scroll libraries (like iScroll) that move an internal container to a negative offset instead of actually scrolling. In this case the update on the controller needs to be called whenever the child container's position changes.
-For this case there will also be the need to provide a custom function to calculate the correct scroll position. See <code>ScrollMagic.scrollPos()</code> for details.</p>
+        <p>更新控制器参数和每一个场景，<br>查看 <code>ScrollMagic.updateScene()</code> 以获取更多信息。<br>大多数情况下你不需要这个方法，因为它是不断被调用的，每当 ScrollMagic 检测一个状态变更事件时，如调整尺寸或滚动时。<br>这个方法的唯一的应用，是当 ScrollMagic 未能检测到这些事件时。<br>另一种应用是与一些外部的滚动库 (如 iScroll) 协同工作，它 (iScroll) 将内部容器移动一个负的偏移量来代替实际的滚动。在这种情况下，控制器上的更新需要在子容器的位置发生变化时被调用。对于这种情况也将有必要提供一个自定义函数来计算出正确的滚动位置。查看 <code>ScrollMagic.scrollPos()</code> 了解更多信息。</p>
     </div>
     
 
@@ -1222,7 +1006,7 @@ For this case there will also be the need to provide a custom function to calcul
                 </td>
             
 
-            <td class="description last"><p>If <code>true</code> the update will be instant, if <code>false</code> it will wait until next update cycle (better performance)</p></td>
+            <td class="description last"><p>若为 <code>true</code> 则实时更新，若为 <code>false</code> 它将会等到下一个更新周期 (更好的性能)</p></td>
         </tr>
 
 	
@@ -1315,7 +1099,7 @@ controller.update(true);</pre>
     
     
     <div class="description">
-        <p>Update one ore more scene(s) according to the scroll position of the container.<br>This is the equivalent to <code>ScrollScene.update()</code>.<br>The update method calculates the scene's start and end position (based on the trigger element, trigger hook, duration and offset) and checks it against the current scroll position of the container.<br>It then updates the current scene state accordingly (or does nothing, if the state is already correct) – Pins will be set to their correct position and tweens will be updated to their correct progress.<br><em><strong>Note:</strong> This method gets called constantly whenever ScrollMagic detects a change. The only application for you is if you change something outside of the realm of ScrollMagic, like moving the trigger or changing tween parameters.</em></p>
+        <p>Update one ore more scene(s) according to the scroll position of the container.<br>This is the equivalent to <code>ScrollScene.update()</code>.<br>The update method calculates the scene's start and end position (based on the trigger element, trigger hook, duration and offset) and checks it against the current scroll position of the container.<br>It then updates the current scene state accordingly (or does nothing, if the state is already correct) – Pins will be set to their correct position and tweens will be updated to their correct progress.<br><em><strong>注意：</strong> This method gets called constantly whenever ScrollMagic detects a change. The only application for you is if you change something outside of the realm of ScrollMagic, like moving the trigger or changing tween parameters.</em></p>
     </div>
     
 
