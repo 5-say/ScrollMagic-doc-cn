@@ -120,7 +120,7 @@
     
         
 <dt>
-    <h4 class="name" id="ScrollScene"><span class="type-signature"></span>new ScrollScene<span class="signature">(<span class="optional">options</span>)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="ScrollScene"><span class="type-signature"></span>new ScrollScene<span class="signature">(<span class="optional">options</span>)</span><span class="type-signature"></span> 实例化</h4>
     
     
 </dt>
@@ -128,7 +128,7 @@
     
     
     <div class="description">
-        <p>A ScrollScene defines where the controller should react and how.</p>
+        <p>一个场景，定义了控制器何时以及如何做出响应。</p>
     </div>
     
 
@@ -190,7 +190,7 @@
 
             
 
-            <td class="description last"><p>Options for the Scene. The options can be updated at any time.<br>                                    Instead of setting the options for each scene individually you can also set them globally in the controller as the controllers <code>globalSceneOptions</code> option. The object accepts the same properties as the ones below.<br>                                    When a scene is added to the controller the options defined using the ScrollScene constructor will be overwritten by those set in <code>globalSceneOptions</code>.</p>
+            <td class="description last"><p>场景参数。这些参数可以在任何时候被更新。<br>不必为每个场景都单独设置，也可以使用 <code>globalSceneOptions</code> 来设置全局参数。对象接受相同的参数如下面的那些。<br>当一个场景被添加到控制器，使用 ScrollScene 构造定义的选项将覆盖那些在 <code>globalSceneOptions</code> 中的设置。</p>
                 <h6>Properties</h6>
                 
 
@@ -571,7 +571,17 @@
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// create a standard scene and add it to a controllernew ScrollScene()		.addTo(controller);// create a scene with custom options and assign a handler to it.var scene = new ScrollScene({		duration: 100,		offset: 200,		triggerHook: "onEnter",		reverse: false});</pre>
+    <pre class="sunlight-highlight-javascript">// create a standard scene and add it to a controller
+new ScrollScene()
+		.addTo(controller);
+
+// create a scene with custom options and assign a handler to it.
+var scene = new ScrollScene({
+		duration: 100,
+		offset: 200,
+		triggerHook: "onEnter",
+		reverse: false
+});</pre>
 
 
     
@@ -728,7 +738,8 @@
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// add a scene to a ScrollMagic controllerscene.addTo(controller);</pre>
+    <pre class="sunlight-highlight-javascript">// add a scene to a ScrollMagic controller
+scene.addTo(controller);</pre>
 
 
     
@@ -887,7 +898,11 @@
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// destroy the scene without resetting the pin and tween to their initial positionsscene = scene.destroy();// destroy the scene and reset the pin and tweenscene = scene.destroy(true);</pre>
+    <pre class="sunlight-highlight-javascript">// destroy the scene without resetting the pin and tween to their initial positions
+scene = scene.destroy();
+
+// destroy the scene and reset the pin and tween
+scene = scene.destroy(true);</pre>
 
 
     
@@ -1070,7 +1085,11 @@
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// get the current scene progressvar progress = scene.progress();// set new scene progressscene.progress(0.3);</pre>
+    <pre class="sunlight-highlight-javascript">// get the current scene progress
+var progress = scene.progress();
+
+// set new scene progress
+scene.progress(0.3);</pre>
 
 
     
@@ -1173,7 +1192,12 @@ If you don't it will simply be updated in the next refresh interval of the conta
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">scene = new ScrollScene({triggerElement: "#trigger"});// change the position of the trigger$("#trigger").css("top", 500);// immediately let the scene know of this changescene.refresh();</pre>
+    <pre class="sunlight-highlight-javascript">scene = new ScrollScene({triggerElement: "#trigger"});
+
+// change the position of the trigger
+$("#trigger").css("top", 500);
+// immediately let the scene know of this change
+scene.refresh();</pre>
 
 
     
@@ -1265,7 +1289,8 @@ To remove the pin or the tween you need to call removeTween() or removePin() res
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// remove the scene from its parent controllerscene.remove();</pre>
+    <pre class="sunlight-highlight-javascript">// remove the scene from its parent controller
+scene.remove();</pre>
 
 
     
@@ -1424,7 +1449,11 @@ To remove the pin or the tween you need to call removeTween() or removePin() res
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// remove class binding from the scene without resetscene.removeClassToggle();// remove class binding and remove the changes it causedscene.removeClassToggle(true);</pre>
+    <pre class="sunlight-highlight-javascript">// remove class binding from the scene without reset
+scene.removeClassToggle();
+
+// remove class binding and remove the changes it caused
+scene.removeClassToggle(true);</pre>
 
 
     
@@ -1583,7 +1612,11 @@ To remove the pin or the tween you need to call removeTween() or removePin() res
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// remove the pin from the scene without resetting it (the spacer is not removed)scene.removePin();// remove the pin from the scene and reset the pin element to its initial position (spacer is removed)scene.removePin(true);</pre>
+    <pre class="sunlight-highlight-javascript">// remove the pin from the scene without resetting it (the spacer is not removed)
+scene.removePin();
+
+// remove the pin from the scene and reset the pin element to its initial position (spacer is removed)
+scene.removePin(true);</pre>
 
 
     
@@ -1742,7 +1775,11 @@ To remove the pin or the tween you need to call removeTween() or removePin() res
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// remove the tween from the scene without resetting itscene.removeTween();// remove the tween from the scene and reset it to initial positionscene.removeTween(true);</pre>
+    <pre class="sunlight-highlight-javascript">// remove the tween from the scene without resetting it
+scene.removeTween();
+
+// remove the tween from the scene and reset it to initial position
+scene.removeTween(true);</pre>
 
 
     
@@ -1908,7 +1945,11 @@ If the scene duration is 0 the classes will only be removed if the user scrolls 
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// add the class 'myclass' to the element with the id 'my-elem' for the duration of the scenescene.setClassToggle("#my-elem", "myclass");// add multiple classes to multiple elements defined by the selector '.classChange'scene.setClassToggle(".classChange", "class1 class2 class3");</pre>
+    <pre class="sunlight-highlight-javascript">// add the class 'myclass' to the element with the id 'my-elem' for the duration of the scene
+scene.setClassToggle("#my-elem", "myclass");
+
+// add multiple classes to multiple elements defined by the selector '.classChange'
+scene.setClassToggle(".classChange", "class1 class2 class3");</pre>
 
 
     
@@ -2240,7 +2281,11 @@ If the scene duration is 0 the classes will only be removed if the user scrolls 
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// pin element and push all following elements down by the amount of the pin duration.scene.setPin("#pin");// pin element and keeping all following elements in their place. The pinned element will move past them.scene.setPin("#pin", {pushFollowers: false});</pre>
+    <pre class="sunlight-highlight-javascript">// pin element and push all following elements down by the amount of the pin duration.
+scene.setPin("#pin");
+
+// pin element and keeping all following elements in their place. The pinned element will move past them.
+scene.setPin("#pin", {pushFollowers: false});</pre>
 
 
     
@@ -2379,7 +2424,17 @@ If the scene duration is 0 the classes will only be removed if the user scrolls 
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// add a single tweenscene.setTween(TweenMax.to("obj"), 1, {x: 100});// add multiple tweens, wrapped in a timeline.var timeline = new TimelineMax();var tween1 = TweenMax.from("obj1", 1, {x: 100});var tween2 = TweenMax.to("obj2", 1, {y: 100});timeline		.add(tween1)		.add(tween2);scene.addTween(timeline);</pre>
+    <pre class="sunlight-highlight-javascript">// add a single tween
+scene.setTween(TweenMax.to("obj"), 1, {x: 100});
+
+// add multiple tweens, wrapped in a timeline.
+var timeline = new TimelineMax();
+var tween1 = TweenMax.from("obj1", 1, {x: 100});
+var tween2 = TweenMax.to("obj2", 1, {y: 100});
+timeline
+		.add(tween1)
+		.add(tween2);
+scene.addTween(timeline);</pre>
 
 
     
@@ -2544,7 +2599,11 @@ This means an update doesn't necessarily result in a progress change. The <code>
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// update the scene on next tickscene.update();// update the scene immediatelyscene.update(true);</pre>
+    <pre class="sunlight-highlight-javascript">// update the scene on next tick
+scene.update();
+
+// update the scene immediately
+scene.update(true);</pre>
 
 
     
@@ -2724,7 +2783,23 @@ As a setter it also accepts a function returning a numeric value.<br>This is par
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// get the current duration valuevar duration = scene.duration();// set a new durationscene.duration(300);// use a function to automatically adjust the duration to the window height.var durationValueCache;function getDuration () {  return durationValueCache;}function updateDuration (e) {  durationValueCache = $(window).innerHeight();}$(window).on("resize", updateDuration); // update the duration when the window size changes$(window).triggerHandler("resize"); // set to initial valuescene.duration(getDuration); // supply duration method</pre>
+    <pre class="sunlight-highlight-javascript">// get the current duration value
+var duration = scene.duration();
+
+// set a new duration
+scene.duration(300);
+
+// use a function to automatically adjust the duration to the window height.
+var durationValueCache;
+function getDuration () {
+  return durationValueCache;
+}
+function updateDuration (e) {
+  durationValueCache = $(window).innerHeight();
+}
+$(window).on("resize", updateDuration); // update the duration when the window size changes
+$(window).triggerHandler("resize"); // set to initial value
+scene.duration(getDuration); // supply duration method</pre>
 
 
     
@@ -2878,7 +2953,11 @@ As a setter it also accepts a function returning a numeric value.<br>This is par
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// get the current valuevar enabled = scene.enabled();// disable the scenescene.enabled(false);</pre>
+    <pre class="sunlight-highlight-javascript">// get the current value
+var enabled = scene.enabled();
+
+// disable the scene
+scene.enabled(false);</pre>
 
 
     
@@ -3047,7 +3126,11 @@ As a setter it also accepts a function returning a numeric value.<br>This is par
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// get the current loglevelvar loglevel = scene.loglevel();// set new loglevelscene.loglevel(3);</pre>
+    <pre class="sunlight-highlight-javascript">// get the current loglevel
+var loglevel = scene.loglevel();
+
+// set new loglevel
+scene.loglevel(3);</pre>
 
 
     
@@ -3218,7 +3301,11 @@ As a setter it also accepts a function returning a numeric value.<br>This is par
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// get the current offsetvar offset = scene.offset();// set a new offsetscene.offset(100);</pre>
+    <pre class="sunlight-highlight-javascript">// get the current offset
+var offset = scene.offset();
+
+// set a new offset
+scene.offset(100);</pre>
 
 
     
@@ -3387,7 +3474,11 @@ As a setter it also accepts a function returning a numeric value.<br>This is par
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// get the current reverse optionvar reverse = scene.reverse();// set new reverse optionscene.reverse(false);</pre>
+    <pre class="sunlight-highlight-javascript">// get the current reverse option
+var reverse = scene.reverse();
+
+// set new reverse option
+scene.reverse(false);</pre>
 
 
     
@@ -3563,7 +3654,15 @@ Does <strong>not</strong> fire <code>ScrollScene.shift</code>, because changing 
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// get the current triggerElementvar triggerElement = scene.triggerElement();// set a new triggerElement using a selectorscene.triggerElement("#trigger");// set a new triggerElement using a jQuery Objectscene.triggerElement($("#trigger"));// set a new triggerElement using a DOM objectscene.triggerElement(document.getElementById("trigger"));</pre>
+    <pre class="sunlight-highlight-javascript">// get the current triggerElement
+var triggerElement = scene.triggerElement();
+
+// set a new triggerElement using a selector
+scene.triggerElement("#trigger");
+// set a new triggerElement using a jQuery Object
+scene.triggerElement($("#trigger"));
+// set a new triggerElement using a DOM object
+scene.triggerElement(document.getElementById("trigger"));</pre>
 
 
     
@@ -3737,7 +3836,13 @@ Does <strong>not</strong> fire <code>ScrollScene.shift</code>, because changing 
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// get the current triggerHook valuevar triggerHook = scene.triggerHook();// set a new triggerHook using a stringscene.triggerHook("onLeave");// set a new triggerHook using a numberscene.triggerHook(0.7);</pre>
+    <pre class="sunlight-highlight-javascript">// get the current triggerHook value
+var triggerHook = scene.triggerHook();
+
+// set a new triggerHook using a string
+scene.triggerHook("onLeave");
+// set a new triggerHook using a number
+scene.triggerHook(0.7);</pre>
 
 
     
@@ -3906,7 +4011,11 @@ Does <strong>not</strong> fire <code>ScrollScene.shift</code>, because changing 
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// get the current tweenChanges optionvar tweenChanges = scene.tweenChanges();// set new tweenChanges optionscene.tweenChanges(true);</pre>
+    <pre class="sunlight-highlight-javascript">// get the current tweenChanges option
+var tweenChanges = scene.tweenChanges();
+
+// set new tweenChanges option
+scene.tweenChanges(true);</pre>
 
 
     
@@ -4000,7 +4109,8 @@ Does <strong>not</strong> fire <code>ScrollScene.shift</code>, because changing 
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// get the parent controller of a scenevar controller = scene.parent();</pre>
+    <pre class="sunlight-highlight-javascript">// get the parent controller of a scene
+var controller = scene.parent();</pre>
 
 
     
@@ -4090,7 +4200,10 @@ Does <strong>not</strong> fire <code>ScrollScene.shift</code>, because changing 
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// get the current scroll offset for the start and end of the scene.var start = scene.scrollOffset();var end = scene.scrollOffset() + scene.duration();console.log("the scene starts at", start, "and ends at", end);</pre>
+    <pre class="sunlight-highlight-javascript">// get the current scroll offset for the start and end of the scene.
+var start = scene.scrollOffset();
+var end = scene.scrollOffset() + scene.duration();
+console.log("the scene starts at", start, "and ends at", end);</pre>
 
 
     
@@ -4180,7 +4293,8 @@ Does <strong>not</strong> fire <code>ScrollScene.shift</code>, because changing 
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// get the current statevar state = scene.state();</pre>
+    <pre class="sunlight-highlight-javascript">// get the current state
+var state = scene.state();</pre>
 
 
     
@@ -4341,7 +4455,8 @@ Does <strong>not</strong> fire <code>ScrollScene.shift</code>, because changing 
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// get the scene's trigger positionvar triggerPosition = scene.triggerPosition();</pre>
+    <pre class="sunlight-highlight-javascript">// get the scene's trigger position
+var triggerPosition = scene.triggerPosition();</pre>
 
 
     
@@ -4527,7 +4642,13 @@ Does <strong>not</strong> fire <code>ScrollScene.shift</code>, because changing 
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">function callback (event) {		console.log("Event fired! (" + event.type + ")");}// add listenersscene.on("change update", callback);// remove listenersscene.off("change update", callback);</pre>
+    <pre class="sunlight-highlight-javascript">function callback (event) {
+		console.log("Event fired! (" + event.type + ")");
+}
+// add listeners
+scene.on("change update", callback);
+// remove listeners
+scene.off("change update", callback);</pre>
 
 
     
@@ -4689,7 +4810,11 @@ Does <strong>not</strong> fire <code>ScrollScene.shift</code>, because changing 
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">function callback (event) {		console.log("Event fired! (" + event.type + ")");}// add listenersscene.on("change update progress start end enter leave", callback);</pre>
+    <pre class="sunlight-highlight-javascript">function callback (event) {
+		console.log("Event fired! (" + event.type + ")");
+}
+// add listeners
+scene.on("change update progress start end enter leave", callback);</pre>
 
 
     
@@ -5317,7 +5442,11 @@ Does <strong>not</strong> fire <code>ScrollScene.shift</code>, because changing 
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">// add basic indicatorsscene.addIndicators()// passing optionsscene.addIndicators({zindex: 100, colorEnd: "#FFFFFF"});</pre>
+    <pre class="sunlight-highlight-javascript">// add basic indicators
+scene.addIndicators()
+
+// passing options
+scene.addIndicators({zindex: 100, colorEnd: "#FFFFFF"});</pre>
 
 
     
@@ -5569,7 +5698,9 @@ Does <strong>not</strong> fire <code>ScrollScene.shift</code>, because changing 
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">scene.on("change", function (event) {		console.log("Scene Property \"" + event.what + "\" changed to " + event.newval);});</pre>
+    <pre class="sunlight-highlight-javascript">scene.on("change", function (event) {
+		console.log("Scene Property \"" + event.what + "\" changed to " + event.newval);
+});</pre>
 
 
     
@@ -5794,7 +5925,16 @@ This can be used to tidy up custom behaviour used in events.</p>
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">scene.on("enter", function (event) {       // add custom action       $("#my-elem").left("200");     })     .on("destroy", function (event) {       // reset my element to start position       if (event.reset) {         $("#my-elem").left("0");       }     });</pre>
+    <pre class="sunlight-highlight-javascript">scene.on("enter", function (event) {
+       // add custom action
+       $("#my-elem").left("200");
+     })
+     .on("destroy", function (event) {
+       // reset my element to start position
+       if (event.reset) {
+         $("#my-elem").left("0");
+       }
+     });</pre>
 
 
     
@@ -6062,7 +6202,9 @@ This can be used to tidy up custom behaviour used in events.</p>
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">scene.on("end", function (event) {		alert("Hit end point of scene.");});</pre>
+    <pre class="sunlight-highlight-javascript">scene.on("end", function (event) {
+		alert("Hit end point of scene.");
+});</pre>
 
 
     
@@ -6330,7 +6472,9 @@ This can be used to tidy up custom behaviour used in events.</p>
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">scene.on("enter", function (event) {		alert("Entered a scene.");});</pre>
+    <pre class="sunlight-highlight-javascript">scene.on("enter", function (event) {
+		alert("Entered a scene.");
+});</pre>
 
 
     
@@ -6598,7 +6742,9 @@ This can be used to tidy up custom behaviour used in events.</p>
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">scene.on("leave", function (event) {		alert("Left a scene.");});</pre>
+    <pre class="sunlight-highlight-javascript">scene.on("leave", function (event) {
+		alert("Left a scene.");
+});</pre>
 
 
     
@@ -6866,7 +7012,9 @@ This can be used to tidy up custom behaviour used in events.</p>
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">scene.on("progress", function (event) {		console.log("Scene progress changed.");});</pre>
+    <pre class="sunlight-highlight-javascript">scene.on("progress", function (event) {
+		console.log("Scene progress changed.");
+});</pre>
 
 
     
@@ -7093,7 +7241,9 @@ It will also fire implicitly when the size of the container changes and the trig
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">scene.on("shift", function (event) {		console.log("Scene moved, because the " + event.reason + " has changed.)");});</pre>
+    <pre class="sunlight-highlight-javascript">scene.on("shift", function (event) {
+		console.log("Scene moved, because the " + event.reason + " has changed.)");
+});</pre>
 
 
     
@@ -7361,7 +7511,9 @@ It will also fire implicitly when the size of the container changes and the trig
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">scene.on("start", function (event) {		alert("Hit start point of scene.");});</pre>
+    <pre class="sunlight-highlight-javascript">scene.on("start", function (event) {
+		alert("Hit start point of scene.");
+});</pre>
 
 
     
@@ -7628,7 +7780,9 @@ It will also fire implicitly when the size of the container changes and the trig
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">scene.on("update", function (event) {		console.log("Scene updated.");});</pre>
+    <pre class="sunlight-highlight-javascript">scene.on("update", function (event) {
+		console.log("Scene updated.");
+});</pre>
 
 
     
