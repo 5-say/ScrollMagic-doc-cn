@@ -462,7 +462,7 @@
                 </td>
             
 
-            <td class="description last"><p>Tweens Animation to the progress target instead of setting it.<br>当 duration 设置为 <code>0</code> 时不影响动画。</p></td>
+            <td class="description last"><p>补间重置时是否启用动画效果。<br>当 duration 设置为 <code>0</code> 时忽略此项，不启用动画。</p></td>
         </tr>
 
 	
@@ -1206,7 +1206,7 @@ scene.refresh();</pre>
         
             
 <dt>
-    <h4 class="name" id="remove"><span class="type-signature"></span>remove<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="ScrollScene.html">ScrollScene</a>}</span> 移除</h4>
+    <h4 class="name" id="remove"><span class="type-signature"></span>remove<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="ScrollScene.html">ScrollScene</a>}</span> 移除场景</h4>
     
     
 </dt>
@@ -1299,7 +1299,7 @@ scene.remove();</pre>
         
             
 <dt>
-    <h4 class="name" id="removeClassToggle"><span class="type-signature"></span>removeClassToggle<span class="signature">(<span class="optional">reset</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollScene.html">ScrollScene</a>}</span></h4>
+    <h4 class="name" id="removeClassToggle"><span class="type-signature"></span>removeClassToggle<span class="signature">(<span class="optional">reset</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollScene.html">ScrollScene</a>}</span> 移除样式切换</h4>
     
     
 </dt>
@@ -1462,7 +1462,7 @@ scene.removeClassToggle(true);</pre>
         
             
 <dt>
-    <h4 class="name" id="removePin"><span class="type-signature"></span>removePin<span class="signature">(<span class="optional">reset</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollScene.html">ScrollScene</a>}</span></h4>
+    <h4 class="name" id="removePin"><span class="type-signature"></span>removePin<span class="signature">(<span class="optional">reset</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollScene.html">ScrollScene</a>}</span> 移除悬停效果</h4>
     
     
 </dt>
@@ -1625,7 +1625,7 @@ scene.removePin(true);</pre>
         
             
 <dt>
-    <h4 class="name" id="removeTween"><span class="type-signature"></span>removeTween<span class="signature">(<span class="optional">reset</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollScene.html">ScrollScene</a>}</span></h4>
+    <h4 class="name" id="removeTween"><span class="type-signature"></span>removeTween<span class="signature">(<span class="optional">reset</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollScene.html">ScrollScene</a>}</span> 移除补间动画</h4>
     
     
 </dt>
@@ -1788,7 +1788,7 @@ scene.removeTween(true);</pre>
         
             
 <dt>
-    <h4 class="name" id="setClassToggle"><span class="type-signature"></span>setClassToggle<span class="signature">(element, classes)</span><span class="type-signature"> &rarr; {<a href="ScrollScene.html">ScrollScene</a>}</span></h4>
+    <h4 class="name" id="setClassToggle"><span class="type-signature"></span>setClassToggle<span class="signature">(element, classes)</span><span class="type-signature"> &rarr; {<a href="ScrollScene.html">ScrollScene</a>}</span> 设置样式切换</h4>
     
     
 </dt>
@@ -1958,7 +1958,7 @@ scene.setClassToggle(".classChange", "class1 class2 class3");</pre>
         
             
 <dt>
-    <h4 class="name" id="setPin"><span class="type-signature"></span>setPin<span class="signature">(element, <span class="optional">settings</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollScene.html">ScrollScene</a>}</span></h4>
+    <h4 class="name" id="setPin"><span class="type-signature"></span>setPin<span class="signature">(element, <span class="optional">settings</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollScene.html">ScrollScene</a>}</span> 设置悬停效果</h4>
     
     
 </dt>
@@ -2294,7 +2294,7 @@ scene.setPin("#pin", {pushFollowers: false});</pre>
         
             
 <dt>
-    <h4 class="name" id="setTween"><span class="type-signature"></span>setTween<span class="signature">(TweenObject)</span><span class="type-signature"> &rarr; {<a href="ScrollScene.html">ScrollScene</a>}</span></h4>
+    <h4 class="name" id="setTween"><span class="type-signature"></span>setTween<span class="signature">(TweenObject)</span><span class="type-signature"> &rarr; {<a href="ScrollScene.html">ScrollScene</a>}</span> 设置补间动画</h4>
     
     
 </dt>
@@ -2443,7 +2443,7 @@ scene.addTween(timeline);</pre>
         
             
 <dt>
-    <h4 class="name" id="update"><span class="type-signature"></span>update<span class="signature">(<span class="optional">immediately</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollScene.html">ScrollScene</a>}</span></h4>
+    <h4 class="name" id="update"><span class="type-signature"></span>update<span class="signature">(<span class="optional">immediately</span>)</span><span class="type-signature"> &rarr; {<a href="ScrollScene.html">ScrollScene</a>}</span> 更新</h4>
     
     
 </dt>
@@ -2611,12 +2611,12 @@ scene.update(true);</pre>
 
         </dl>
     
-        <h3 class="subsection-title">Scene Parameters (getter / setter)</h3>
+        <h3 class="subsection-title">Scene Parameters (getter / setter) 场景参数</h3>
 
         <dl>
             
 <dt>
-    <h4 class="name" id="duration"><span class="type-signature"></span>duration<span class="signature">(<span class="optional">newDuration</span>)</span><span class="type-signature"> &rarr; {number}</span></h4>
+    <h4 class="name" id="duration"><span class="type-signature"></span>duration<span class="signature">(<span class="optional">newDuration</span>)</span><span class="type-signature"> &rarr; {number}</span> 持续时间</h4>
     
     
 </dt>
@@ -2808,7 +2808,7 @@ scene.duration(getDuration); // supply duration method</pre>
         
             
 <dt>
-    <h4 class="name" id="enabled"><span class="type-signature"></span>enabled<span class="signature">(<span class="optional">newState</span>)</span><span class="type-signature"> &rarr; {boolean|<a href="ScrollScene.html">ScrollScene</a>}</span></h4>
+    <h4 class="name" id="enabled"><span class="type-signature"></span>enabled<span class="signature">(<span class="optional">newState</span>)</span><span class="type-signature"> &rarr; {boolean|<a href="ScrollScene.html">ScrollScene</a>}</span> 场景开关</h4>
     
     
 </dt>
@@ -2966,7 +2966,7 @@ scene.enabled(false);</pre>
         
             
 <dt>
-    <h4 class="name" id="loglevel"><span class="type-signature"></span>loglevel<span class="signature">(<span class="optional">newLoglevel</span>)</span><span class="type-signature"> &rarr; {number}</span></h4>
+    <h4 class="name" id="loglevel"><span class="type-signature"></span>loglevel<span class="signature">(<span class="optional">newLoglevel</span>)</span><span class="type-signature"> &rarr; {number}</span> 日志等级</h4>
     
     
 </dt>
@@ -3139,7 +3139,7 @@ scene.loglevel(3);</pre>
         
             
 <dt>
-    <h4 class="name" id="offset"><span class="type-signature"></span>offset<span class="signature">(<span class="optional">newOffset</span>)</span><span class="type-signature"> &rarr; {number}</span></h4>
+    <h4 class="name" id="offset"><span class="type-signature"></span>offset<span class="signature">(<span class="optional">newOffset</span>)</span><span class="type-signature"> &rarr; {number}</span> 偏移量</h4>
     
     
 </dt>
@@ -3314,7 +3314,7 @@ scene.offset(100);</pre>
         
             
 <dt>
-    <h4 class="name" id="reverse"><span class="type-signature"></span>reverse<span class="signature">(<span class="optional">newReverse</span>)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="reverse"><span class="type-signature"></span>reverse<span class="signature">(<span class="optional">newReverse</span>)</span><span class="type-signature"> &rarr; {boolean}</span> 逆转</h4>
     
     
 </dt>
@@ -3487,7 +3487,7 @@ scene.reverse(false);</pre>
         
             
 <dt>
-    <h4 class="name" id="triggerElement"><span class="type-signature"></span>triggerElement<span class="signature">(<span class="optional">newTriggerElement</span>)</span><span class="type-signature"> &rarr; {string|object}</span></h4>
+    <h4 class="name" id="triggerElement"><span class="type-signature"></span>triggerElement<span class="signature">(<span class="optional">newTriggerElement</span>)</span><span class="type-signature"> &rarr; {string|object}</span> 触发元素</h4>
     
     
 </dt>
@@ -3671,7 +3671,7 @@ scene.triggerElement(document.getElementById("trigger"));</pre>
         
             
 <dt>
-    <h4 class="name" id="triggerHook"><span class="type-signature"></span>triggerHook<span class="signature">(<span class="optional">newTriggerHook</span>)</span><span class="type-signature"> &rarr; {number}</span></h4>
+    <h4 class="name" id="triggerHook"><span class="type-signature"></span>triggerHook<span class="signature">(<span class="optional">newTriggerHook</span>)</span><span class="type-signature"> &rarr; {number}</span> 触发位置</h4>
     
     
 </dt>
@@ -3851,7 +3851,7 @@ scene.triggerHook(0.7);</pre>
         
             
 <dt>
-    <h4 class="name" id="tweenChanges"><span class="type-signature"></span>tweenChanges<span class="signature">(<span class="optional">newTweenChanges</span>)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="tweenChanges"><span class="type-signature"></span>tweenChanges<span class="signature">(<span class="optional">newTweenChanges</span>)</span><span class="type-signature"> &rarr; {boolean}</span>补间重置方式</h4>
     
     
 </dt>
@@ -4023,12 +4023,12 @@ scene.tweenChanges(true);</pre>
 
         </dl>
     
-        <h3 class="subsection-title">Scene Properties (getter)</h3>
+        <h3 class="subsection-title">Scene Properties (getter) 场景属性</h3>
 
         <dl>
             
 <dt>
-    <h4 class="name" id="parent"><span class="type-signature"></span>parent<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="ScrollMagic.html">ScrollMagic</a>}</span></h4>
+    <h4 class="name" id="parent"><span class="type-signature"></span>parent<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="ScrollMagic.html">ScrollMagic</a>}</span> 父控制器实例</h4>
     
     
 </dt>
@@ -4036,7 +4036,7 @@ scene.tweenChanges(true);</pre>
     
     
     <div class="description">
-        <p><strong>Get</strong> the parent controller.</p>
+        <p><strong>获取</strong> the parent controller.</p>
     </div>
     
 
@@ -4119,7 +4119,7 @@ var controller = scene.parent();</pre>
         
             
 <dt>
-    <h4 class="name" id="scrollOffset"><span class="type-signature"></span>scrollOffset<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
+    <h4 class="name" id="scrollOffset"><span class="type-signature"></span>scrollOffset<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span> 当前滚动偏移量</h4>
     
     
 </dt>
@@ -4127,7 +4127,7 @@ var controller = scene.parent();</pre>
     
     
     <div class="description">
-        <p><strong>Get</strong> the current scroll offset for the start of the scene.<br>Mind, that the scrollOffset is related to the size of the container, if <code>triggerHook</code> is bigger than <code>0</code> (or <code>&quot;onLeave&quot;</code>).<br>This means, that resizing the container or changing the <code>triggerHook</code> will influence the scene's start offset.</p>
+        <p><strong>获取</strong> the current scroll offset for the start of the scene.<br>Mind, that the scrollOffset is related to the size of the container, if <code>triggerHook</code> is bigger than <code>0</code> (or <code>&quot;onLeave&quot;</code>).<br>This means, that resizing the container or changing the <code>triggerHook</code> will influence the scene's start offset.</p>
     </div>
     
 
@@ -4212,7 +4212,7 @@ console.log("the scene starts at", start, "and ends at", end);</pre>
         
             
 <dt>
-    <h4 class="name" id="state"><span class="type-signature"></span>state<span class="signature">()</span><span class="type-signature"> &rarr; {string}</span></h4>
+    <h4 class="name" id="state"><span class="type-signature"></span>state<span class="signature">()</span><span class="type-signature"> &rarr; {string}</span> 当前场景状态</h4>
     
     
 </dt>
@@ -4220,7 +4220,7 @@ console.log("the scene starts at", start, "and ends at", end);</pre>
     
     
     <div class="description">
-        <p><strong>Get</strong> the current state.</p>
+        <p><strong>获取</strong> the current state.</p>
     </div>
     
 
@@ -4303,7 +4303,7 @@ var state = scene.state();</pre>
         
             
 <dt>
-    <h4 class="name" id="triggerOffset"><span class="type-signature"></span>triggerOffset<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="triggerOffset"><span class="type-signature"></span>triggerOffset<span class="signature">()</span><span class="type-signature"></span> 触发场景的偏移量</h4>
     
     
 </dt>
@@ -4311,7 +4311,7 @@ var state = scene.state();</pre>
     
     
     <div class="description">
-        <p><strong>Get</strong> the trigger offset of the scene (including the value of the <code>offset</code> option).</p>
+        <p><strong>获取</strong> the trigger offset of the scene (including the value of the <code>offset</code> option).</p>
     </div>
     
 
@@ -4374,7 +4374,7 @@ var state = scene.state();</pre>
         
             
 <dt>
-    <h4 class="name" id="triggerPosition"><span class="type-signature"></span>triggerPosition<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
+    <h4 class="name" id="triggerPosition"><span class="type-signature"></span>triggerPosition<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span> 触发场景的位置</h4>
     
     
 </dt>
@@ -4382,7 +4382,7 @@ var state = scene.state();</pre>
     
     
     <div class="description">
-        <p><strong>Get</strong> the trigger position of the scene (including the value of the <code>offset</code> option).</p>
+        <p><strong>获取</strong> 触发场景的位置 (包含偏移量 <code>offset</code> ).</p>
     </div>
     
 
@@ -4464,7 +4464,7 @@ var triggerPosition = scene.triggerPosition();</pre>
 
         </dl>
     
-        <h3 class="subsection-title">Event Handling</h3>
+        <h3 class="subsection-title">Event Handling 事件处理</h3>
 
         <dl>
             
